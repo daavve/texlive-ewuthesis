@@ -5,8 +5,8 @@ example.pdf:
 	@cd example && ./build.sh > /dev/null
 	@mv example/example.pdf ./
 
-clean:  example/example.pdf
-	rm example/example.pdf
+clean:  example.pdf
+	rm example.pdf
 
 publish: # files
 	#
