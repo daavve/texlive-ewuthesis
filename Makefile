@@ -1,3 +1,9 @@
+PKGNAME     = "ewuthesis"
+DESTDIR     ?= $(shell kpsewhich -var-value=TEXMFHOME)
+INSTALL_DIR = $(DESTDIR)/tex/latex/$(PKGNAME)
+DOC_DIR     = $(DESTDIR)/doc/latex/$(PKGNAME)
+
+
 all:	example.pdf
 
 example.pdf:
@@ -5,9 +11,10 @@ example.pdf:
 	cd example && ./build.sh
 	mv example/example.pdf ./
 
-clean:  example.pdf
+clean:
 	rm example.pdf
-
-publish: # files
-	#
-	# TODO:  Build some publish thing, probably involving PKGBUILD
+	
+package:
+	tar -czf packaged/ewuthesis.tgz --exclude=.git --exclude=packaged ../texlive-ewuthesis
+	
+install:
