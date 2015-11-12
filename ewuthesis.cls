@@ -1,31 +1,14 @@
-%% uafthesis.cls -- curt a.l. szuberla  1996/11/13
-%% 
-%%        produces a UAF approved thesis format; kludged from the
-%%        std. latex2e report.cls and from ucthesis.cls; uses many
-%%        features of the former and is not so complex as the
-%%        latter; for my comments, see the "%%" marks
+%% ewuthesis.cls -- David McInnis 2015/11/11
 %%
-
-%%  Edited by Matt Heavner 1999/02/05
-%%        Add index (so it'll show up on the toc)
-%%        Increment the version number
-%%  Edited by Dana Moudry 2002/12/18
-
-%%  Edited by Ryan Woodard 2004/8/16
-%%        Made all fonts the same size so that Craven will shut up.
+%%      Builds a Thesis document compatable with Eastern Washington University
 %%
-%%  Edited by Joshua Holbrook 2010/3/08
-%%        Fixed font size in title page, added "Page" headings.
+%%      A fork of uafthesis.cls : https://github.com/jfhbrook/uafthesis
 %%
-%%  Edited by Jesse Frey 2012/12/6
-%%        Messed with the signature page some of us need longer lines
+%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uafthesis}
-%%              [2011/04/20 v5.0 UAF thesis class]
-%%              [2004/08/17 v4.9 UAF thesis class]
-%%              [2002/12/18 v4.8 UAF thesis class]
-%%              [1999/02/05 v4.7 UAF thesis class]
+\ProvidesClass{ewuthesis}
+
 \newcommand\@ptsize{}
 \newif\if@restonecol
 \newif\if@openright
