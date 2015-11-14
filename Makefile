@@ -10,4 +10,9 @@ clean:
 	rm example.pdf
 	
 package:
-	tar -czf packaged/ewuthesis.tgz --exclude=.git --exclude=packaged --exclude=ewuthesisstyle.kilepr ./
+	cp -Rf 	example.pdf 	\
+		ewuthesis.cls	\
+		Makefile	\
+		README.md	\
+		example		texlive-ewuthesis/
+	tar -czf packaged/ewuthesis.tgz texlive-ewuthesis/*
