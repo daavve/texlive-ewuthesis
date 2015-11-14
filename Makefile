@@ -15,6 +15,4 @@ clean:
 	rm example.pdf
 	
 package:
-	tar -czf packaged/ewuthesis.tgz --exclude=.git --exclude=packaged ../texlive-ewuthesis
-	
-install:
+	tar -czf packaged/ewuthesis.tgz --exclude=.git --exclude=packaged --exclude=ewuthesisstyle.kilepr ../texlive-ewuthesis
