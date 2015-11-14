@@ -7,6 +7,7 @@ example.pdf:
 
 clean:
 	rm example.pdf
+	cd example && ./clean.sh
 	
 package:
 	tar -czf packaged/ewuthesis.tgz --exclude=.git --exclude=packaged --exclude=ewuthesisstyle.kilepr ../texlive-ewuthesis
