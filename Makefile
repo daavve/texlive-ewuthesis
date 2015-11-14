@@ -1,9 +1,3 @@
-PKGNAME     = "ewuthesis"
-DESTDIR     ?= $(shell kpsewhich -var-value=TEXMFHOME)
-INSTALL_DIR = $(DESTDIR)/tex/latex/$(PKGNAME)
-DOC_DIR     = $(DESTDIR)/doc/latex/$(PKGNAME)
-
-
 all:	example.pdf
 
 example.pdf:
