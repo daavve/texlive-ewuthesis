@@ -2,11 +2,12 @@
 
 ## What is this?
 
-*ewuthesis* is a LaTeX document class meant for using with a Eastern Washington University-style thesis. It would be used like so:
+*ewuthesis* is a LaTeX document class meant for using with a Eastern Washington University-style thesis.
 
     \documentclass{ewuthesis}
 
 Its development web site is at <https://github.com/oraac/texlive-ewuthesis>.
+The thesis style guide and related forms are at <http://http://www.ewu.edu/grad/graduate-student-forms>
 
 ## Manifest:
 
