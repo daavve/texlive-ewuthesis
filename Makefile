@@ -16,3 +16,6 @@ package:
 		README.md	\
 		example		texlive-ewuthesis/
 	tar -czf packaged/ewuthesis.tgz texlive-ewuthesis/*
+	cd ../texlive-ewuthesis-pkg && ./buildInstall.sh
+	
+	
