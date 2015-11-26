@@ -3,11 +3,8 @@ all:	example.pdf
 example.pdf:
 	@echo "-> building example.pdf..."
 	cd example && ./build.sh
-	mv example/example.pdf ./
 	cd example && ./clean.sh
-
-clean:
-	rm example.pdf
+	mv -f example/example.pdf ./
 	
 package:
 	cp -Rf 	example.pdf 	\
