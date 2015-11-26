@@ -1,4 +1,4 @@
-%% ewuthesis.cls -- David McInnis 2015/11/11
+%% ewuthesis.cls -- David McInnis 2015/11/25
 %%
 %%      Builds a Thesis document compatable with Eastern Washington University
 %%
@@ -80,12 +80,10 @@
 %% construction of the front matter.  
 %%   The year the degree will be officially conferred
 \def\degreeyear#1{\gdef\@degreeyear{#1}}
-%%   The month the degree will be officially conferred
-\def\degreemonth#1{\gdef\@degreemonth{#1}}
+%%   The term the degree will be officially conferred
+\def\degreeterm#1{\gdef\@degreeterm{#1}}
 %%   The full (unabbreviated) name of the degree
 \def\degree#1{\gdef\@degree{#1}}
-%%   All previous degrees: one per line in chronological order
-\def\prevdegrees#1{\gdef\@prevdegrees{#1}}
 %%   The number of committee members, which provides for the
 %%    correct number of lines on the signature page.  INCLUDE THE
 %%    CHAIR IN THIS NUMBER! 
@@ -135,11 +133,11 @@
     \bigskip \bigskip \bigskip 
     By \par
     \bigskip 
-    {\@author}, {\@prevdegrees} \par
+    {\@author} \par
     \bigskip \bigskip
     Fairbanks, Alaska \par
     \bigskip 
-    {\@degreemonth} {\@degreeyear}
+    {\@degreeterm} {\@degreeyear}
   \end{center}
     \vfill\null
 \setcounter{footnote}{0}
