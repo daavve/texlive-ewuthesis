@@ -115,28 +115,17 @@
     \addcontentsline{toc}{section}{\titlename}
     \null\vfill
   \begin{center}
-    {\bfseries {\expandafter\uppercase\expandafter{\@title}} \par}
-    \bigskip \bigskip \medskip 
-        A \par 
-        \medskip 
-        THESIS \par
-    \bigskip \bigskip \medskip 
-        Presented to the Faculty \par
-        \medskip
-        of the University of Alaska Fairbanks \par
-    \bigskip \medskip
-        in Partial Fulfillment of the Requirements \par
-        \medskip
-        for the Degree of \par
-    \bigskip \bigskip \medskip 
-    {\expandafter\uppercase\expandafter{\@degree}} \par
-    \bigskip \bigskip \bigskip 
+    \uppercase{\@title} \par
+        A \par
+        Thesis \par
+        Presented To \par
+        Eastern Washington University \par
+        Cheney, WA \par
+        In Partial Fulfillment of the Requirements \par
+        for the Degree \par
+        \@degree \hspace{1pt} in \@department \par 
     By \par
-    \bigskip 
     {\@author} \par
-    \bigskip \bigskip
-    Fairbanks, Alaska \par
-    \bigskip 
     {\@degreeterm} {\@degreeyear}
   \end{center}
     \vfill\null
@@ -153,7 +142,7 @@
 \if@arabic\relax\else\renewcommand{\thepage}{\roman{page}}\fi
 \addcontentsline{toc}{section}{\signame}
 \begin{center}
-    {\large \bfseries {\expandafter\uppercase\expandafter{\@title}} \par}
+    {\uppercase{\@title} \par}
     \bigskip \bigskip
     By \par
     \bigskip \bigskip

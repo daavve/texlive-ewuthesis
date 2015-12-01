@@ -6,7 +6,10 @@ example.pdf:
 	cd example && ./clean.sh
 	mv -f example/example.pdf ./
 	
-package:
+clean: example.pdf
+	rm example.pdf
+	
+pkg:
 	cp -Rf 	example.pdf 	\
 		ewuthesis.cls	\
 		Makefile	\
