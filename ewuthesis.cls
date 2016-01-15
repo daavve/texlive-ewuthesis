@@ -1,5 +1,6 @@
 %%      Maintainer:  David McInnis <davidm@eagles.ewu.edu>
 %%      Used clsguide.pdf as reference -> http://mirrors.rit.edu/CTAN/macros/latex/doc/clsguide.pdf
+%%      This class was origionally a fork of jfhbrook/uafthesis, but has since been completely re-written
 %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
